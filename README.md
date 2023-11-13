@@ -1,27 +1,25 @@
-# TestTheNote
+# Тестовое задание: Заметки Dashboard
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.5.
+Это тестовое задание включает в себя три основных компонента:
 
-## Development server
+1. **Dashboard (Дашборд):** Основной компонент, отображающий текущий список заметок и позволяющий вам взаимодействовать с ними.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+2. **Navbar (Навбар):** Навигационная панель для удобства перемещения по приложению.
 
-## Code scaffolding
+3. **Sidenav (Сайднав):** Боковое меню, предоставляющее дополнительные опции и возможности.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+### Особенности приложения:
 
-## Build
+- **Модель Заметок:** Начальное состояние заметок хранится в модели заметок (`/shared/note-model.ts`).
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+- **Добавление новых Заметок:** Реализован механизм добавления новых заметок.
 
-## Running unit tests
+- **Просмотр Заметок:** Каждую заметку можно легко просмотреть, выбрав соответствующий пункт в боковом меню.
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+### Инструкции по установке и запуску:
 
-## Running end-to-end tests
+1. Склонируйте репозиторий на свой локальный компьютер.
+2. Установите необходимые зависимости с помощью `npm install`.
+3. Запустите приложение с помощью `npm start`.
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
 
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.

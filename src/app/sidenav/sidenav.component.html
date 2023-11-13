@@ -1,0 +1,6 @@
+<div class="sidenav">
+  <h2>Список заметок:</h2>
+  <div routerLink="/note/{{note.id}}" class="sidenav-item" *ngFor="let note of allNote() | async">
+    <h3>{{note.header}}</h3>
+  </div>
+</div>

@@ -1,0 +1,29 @@
+<form [formGroup]="newNoteGroup" class="modal">
+  <h1>Добавить заметку</h1>
+
+  <div class="form-item">
+    <label for="note-header">Заголовок:</label>
+    <input [formControl]="newNoteGroup.controls.header" id="note-header" type="text"
+           placeholder="Введите заголовок">
+  </div>
+
+  <div class="form-item">
+    <label for="task-description">Описание:</label>
+    <input [formControl]="newNoteGroup.controls.description" id="task-description" type="text"
+           placeholder="Введите суть задачи">
+  </div>
+
+
+  <p
+    *ngIf="submitted && (newNoteGroup.controls.header.hasError('required') || newNoteGroup.controls.description.hasError('required'))"
+    class="error-message">
+    Пожалуйста, убедитесь, что поля «Заголовок» и «Описание» заполнены.
+  </p>
+
+  <div>
+    <button class="crateBtn" (click)="createNote()">Создать</button>
+    <button class="cancelBtn" (click)="closeModal()">Отмена</button>
+  </div>
+
+</form>
+

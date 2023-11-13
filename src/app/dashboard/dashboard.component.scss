@@ -1,0 +1,14 @@
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  width: 800px;
+}
+
+.greeting {
+  align-self: flex-end;
+  margin-top: 10px;
+  color: #c2c2c5;
+}

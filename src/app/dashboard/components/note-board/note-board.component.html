@@ -1,0 +1,15 @@
+<div class="container">
+  <ng-container *ngIf="note$ | async as note; else notFoundTemplate">
+    <header>
+      <h1>Заголовок: {{ note?.header }}</h1>
+    </header>
+
+    <section>
+      <p>Описание: {{ note?.description }}</p>
+    </section>
+  </ng-container>
+
+  <ng-template #notFoundTemplate>
+    <p>Заметка не найдена.</p>
+  </ng-template>
+</div>

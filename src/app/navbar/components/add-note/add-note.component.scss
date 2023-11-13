@@ -1,0 +1,64 @@
+.modal {
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+  width: 500px;
+  padding: 20px;
+  border: 1px solid black;
+  background-color: #21212b;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  margin: 0 auto;
+  text-align: center;
+  color: white;
+}
+
+.form-item {
+  width: 400px;
+}
+
+input {
+  color: white;
+}
+
+h1 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+div {
+  margin-bottom: 10px;
+
+  label {
+    display: block;
+    margin-bottom: 5px;
+  }
+
+  input, select {
+    width: 100%;
+    padding: 10px;
+    background-color: #181820;
+    border: 1px solid black;
+    border-radius: 5px;
+  }
+}
+
+.crateBtn, .cancelBtn {
+  margin-right: 10px;
+  padding: 10px 20px;
+  background-color: #3498db;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.cancelBtn {
+  background-color: hotpink;
+}
+
+.error-message {
+  color: #d54646;
+}
+

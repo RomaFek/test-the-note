@@ -1,0 +1,21 @@
+<nav class="navbar">
+  <div class="navbar-menu">
+    <div class="navbar-start">
+      <a (click)="toggleSidenav()" class="navbar-item">
+        <mat-icon class="menu-icon"
+                  aria-hidden="false">{{ (sidenavVisible$ | async) ? 'close' : 'menu' }}</mat-icon>
+      </a>
+      <a routerLink="/"
+         class="navbar-item">
+        <mat-icon aria-hidden="false">dashboard</mat-icon>
+        <p>Мои заметки</p></a>
+    </div>
+
+    <div class="navbar-end">
+      <a (click)="openModal()" class="navbar-item add">
+        <mat-icon aria-hidden="false">add</mat-icon>
+      </a>
+    </div>
+
+  </div>
+</nav>

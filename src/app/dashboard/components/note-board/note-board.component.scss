@@ -1,0 +1,17 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  color: white;
+  margin-top: 40px;
+  width: 100%;
+
+  h1 {
+    color: #c2c2c5;
+  }
+
+  p {
+    font-size: 20px;
+  }
+}
